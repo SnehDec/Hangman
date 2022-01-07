@@ -146,7 +146,7 @@ $("#generate_hint").click(function(){
 //button that simultaneously sends the value of func back to the server, which
 //again renders it on the web page so that the Hanged Man persists upon reloading the page.
 //If the man is completely hanged (func=functions.length), the game ends and the timer
-//stops. 
+//stops.
 let timer = setInterval(function(){  let next_word = true;
   for(let i=0; i<word_letter.length;i++){
     if(word_letter[i].innerHTML!=word_letter[i].id){

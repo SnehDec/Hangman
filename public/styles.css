@@ -1,3 +1,7 @@
+body{
+  background-image: url("background_overall.png");
+}
+
 h1{
   display:inline-block;
   margin: 2% 2% 2% 2%;
@@ -20,13 +24,15 @@ h2{
 }
 
 .definition{
-  display:inline;
+  display:block;
+  margin-bottom: 2%;
   font-size:1.5rem;
 }
 
 .hangman-canvas{
   display:block;
-  margin-top: 2%;
+  margin-top: 10%;
+  margin-left:10%;
 }
 
 #func{
@@ -45,6 +51,9 @@ h2{
 }
 
 .left_pane{
+  background-color:white;
+  border:solid;
+  border-color: #B9138E;
   position:relative;
   display:inline-block;
   left:0;
@@ -57,10 +66,32 @@ position:relative;
 display:inline-block;
 margin-right:2%;
 text-align:justify;
+background-image: url("background.png");
+color: #86065F;
 }
 
 .right_pane{
   position:relative;
   display:inline-block;
   width:30%;
+  font-style: italic;
+  color: #B9138E;
+  font-weight:bold;
+}
+
+.press_button{
+  background-color: #C63499;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 10%;
+  border: none;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.press_button:active{
+  color:pink;
+  background-color: #B9138E;
 }

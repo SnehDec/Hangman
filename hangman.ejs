@@ -13,7 +13,7 @@
       </canvas>
       <form action="/" method="POST">
         <input type="number" name="updated_func" id="send_func">
-      <button type = "submit" id="next_word">></button>
+      <button type = "submit" id="next_word" class="press_button">></button>
       </form>
     </div>
 
@@ -36,7 +36,7 @@
   <%=hints[0]%>
 </p>
   <%for(let i=1; i<hints.length;i++){%>
-    <p class="hidden_hint">
+    <p class="hidden_hint definition">
     <%=hints[i]%>
     </p>
 <%}%>
@@ -44,7 +44,7 @@
   <%=func%>
 </p>
 
-<button id="generate_hint">Hint</button>
+<button id="generate_hint" class="press_button">Hint</button>
 </div>
 
 
