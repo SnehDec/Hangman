@@ -1,0 +1,66 @@
+h1{
+  display:inline-block;
+  margin: 2% 2% 2% 2%;
+  font-size:3rem;
+}
+h2{
+  display:inline-block;
+  margin: 2% 2% 2% 2%;
+  font-size: 2rem;
+}
+
+.hidden_word{
+  display:inline-block;
+  visibility:hidden;
+  font-size:0.01rem
+}
+
+.hidden_hint{
+  visibility:hidden;
+}
+
+.definition{
+  display:inline;
+  font-size:1.5rem;
+}
+
+.hangman-canvas{
+  display:block;
+  margin-top: 2%;
+}
+
+#func{
+  visibility:hidden;
+}
+
+#send_func{
+  visibility:hidden;
+}
+
+#next_word{
+  font-size:2rem;
+  display:block;
+  visibility:hidden;
+
+}
+
+.left_pane{
+  position:relative;
+  display:inline-block;
+  left:0;
+  top: 0;
+  width: 25%;
+}
+
+.middle{
+position:relative;
+display:inline-block;
+margin-right:2%;
+text-align:justify;
+}
+
+.right_pane{
+  position:relative;
+  display:inline-block;
+  width:30%;
+}

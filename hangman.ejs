@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hang-Man</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="left_pane">
+      <canvas class=hangman-canvas>
+
+      </canvas>
+      <form action="/" method="POST">
+        <input type="number" name="updated_func" id="send_func">
+      <button type = "submit" id="next_word">></button>
+      </form>
+    </div>
+
+    <div class="middle">
+      <% for(let i=0; i<words.length; i++){ %>
+    <h1 ondrop = "drop(event)" ondragover="allowDrop(event)"><%=words[i]%></h1>
+    <%}%>
+    <hr>
+      <% for(let i=0; i<letters.length; i++){ %>
+    <h6 class="hidden_word"><%=letters[i]%></h6>
+    <%}%>
+    <br>
+      <% for(let i=0; i<draggable_letters.length; i++){ %>
+    <h2 draggable="true" ondragstart="drag(event)"><%=draggable_letters[i]%></h2>
+    <%}%>
+    </div>
+
+<div class="right_pane">
+  <p class="definition">
+  <%=hints[0]%>
+</p>
+  <%for(let i=1; i<hints.length;i++){%>
+    <p class="hidden_hint">
+    <%=hints[i]%>
+    </p>
+<%}%>
+<p id="func">
+  <%=func%>
+</p>
+
+<button id="generate_hint">Hint</button>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="hangman_animation.js"></script>
+  </body>
+</html>
