@@ -1,0 +1,29 @@
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+
+driver = webdriver.Chrome()
+driver.get("https://randomwordgenerator.com")
+list_of_words = open("C:\\Users\\hp\\Documents\\Web Development\\Hangman\\list_of_words.txt", 'a')
+elem = driver.find_element_by_id("qty")
+elem.clear()
+elem.send_keys("50")
+elem = driver.find_element_by_id("word_length")
+elem.click()
+elem = Select(driver.find_element_by_id("comparing"))
+elem.select_by_value("greater_than")
+elem = driver.find_element_by_name("count")
+elem.clear()
+elem.send_keys("7")
+
+count = 1
+while count<=100:
+    elem = driver.find_element_by_name("submit")
+    elem.click()
+    elem = driver.find_elements_by_xpath("//ul[@id='result']//child::li")
+    for el in elem:
+        list_of_words.write(el.text + "\n")
+
+    count+=1
+
+list_of_words.close()
+driver.close()
