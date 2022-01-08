@@ -17,6 +17,6 @@ comments that generally walk through the code and give clarification on specific
 
 # Credit 
 
-randomwordgenerator.com for providing the list of words used in this program
-Dan Dascalescu and CamHart on StackOverFlow for Node.js file-reading code (which I subsequently modified)
+randomwordgenerator.com for providing the list of words used in this program,
+Dan Dascalescu and CamHart on StackOverFlow for Node.js file-reading code (which I subsequently modified),
 Merriam-Webster whose API I used in this program to grab definitions, synonyms and antonyms of words in the list. 
