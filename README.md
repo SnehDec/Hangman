@@ -1,7 +1,7 @@
 # Hangman
 A web-based Hangman Game 
 
-#How It Works 
+# How It Works 
 
 This is a web-based Hangman Game. It begins with a blank canvas, a partially-visible word (the rest of the letters being blanks to be filled in by the player) with a complete alphabet on-screen keyboard below it,
 and a single hint in the form of a definition, synonym or antonym of the word. The "Hint" button below the visible hint can be used to generate up to four more hints 
